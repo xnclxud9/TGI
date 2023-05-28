@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGI Friday's</title>
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+
+  <!-- 초기화 서식 -->
+  <link rel="stylesheet" href="../css/reset.css" type="text/css">
+  <!-- 공통 서식 -->
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+  <!-- PC 서식 -->
+  <link rel="stylesheet" href="../css/pc.css" type="text/css">
+  <!-- 태블릿 서식-->
+  <link rel="stylesheet" href="../css/tablet.css" type="text/css">
+  <!-- 모바일 서식-->
+  <link rel="stylesheet" href="../css/mobile.css" type="text/css">
+  <!-- 메뉴 서식 -->
+  <link rel="stylesheet" href="./css/menu.css" type="text/css">
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- 공통 스크립트(탑버튼) -->
+  <script src="../script/common.js" defer></script>
+  <!-- 메뉴 스크립트 -->
+  <script src="./script/menu.js" defer></script>
+
+  <!-- 제이쿼리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- 공통 스크립트(탑버튼) -->
+  <script src="../script/common.js" defer></script>
+  <!-- 메인 스크립트 -->
+  <script src="../main/script/main.js" defer></script>
+</head>
+
+<body>
+  <form name="search_form" method="post" action="search.php">
+    <input type="checkbox" id="toggle">
+    <!-- 상단 헤더 영역 -->
+    <header>
+      <h1>
+        <a href="../main/index.html" title="메인 화면 바로 가기">
+          <img src="../img/logo.png" alt="상단 로고">
+        </a>
+      </h1>
+
+      <label for="toggle" class="total_btn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <!-- gnb -->
+      <div class="gnb_tab">
+        <nav class="gnb">
+          <ul>
+            <li><a href="#none" title="BRAND">BRAND</a>
+              <ul class="sub">
+                <li><a href="#" title="ABOUT TGI">ABOUT TGI</a></li>
+                <li><a href="#" title="TGI 더 맛있게">TGI 더 맛있게</a></li>
+              </ul>
+            </li>
+            <li><a href="../menu/menu.html" title="MENU">MENU</a>
+              <ul class="sub">
+                <li><a href="../menu/menu.html" title="신메뉴">신메뉴</a></li>
+                <li><a href="#" title="DELIVERY">DELIVERY</a></li>
+                <li><a href="#" title="런치세트">런치세트</a></li>
+                <li><a href="#" title="">시그니처그릴</a></li>
+                <li><a href="#" title="파스타&라이스">파스타&라이스</a></li>
+                <li><a href="#" title="샐러드">샐러드</a></li>
+                <li><a href="#" title="키즈메뉴">키즈메뉴</a></li>
+                <li><a href="#" title="사이드">사이드</a></li>
+                <li><a href="#" title="음료">음료</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#none" title="MEMBERSHIP">MEMBERSHIP</a>
+              <ul class="sub">
+                <li><a href="#" title="멤버십혜택">멤버십혜택</a></li>
+                <li><a href="#" title="홈 TGI">홈 TGI</a></li>
+                <li><a href="#" title="파티&예약">파티&예약</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#none" title="EVENT">EVENT</a>
+              <ul class="sub">
+                <li><a href="#" title="이벤트">이벤트</a></li>
+                <li><a href="#" title="공지사항">공지사항</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#none" title="STORE">STORE</a>
+              <ul class="sub">
+                <li><a href="#" title="매장찾기">매장찾기</a></li>
+                <li><a href="#" title="창업문의">창업문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- lnb -->
+        <nav class="lnb">
+          <ul>
+            <li><a href="../login/login.html" title="로그인">로그인</a></li>
+            <li><a href="../join/join.html" title="회원가입">회원가입</a></li>
+            <li><a href="#none" title="고객센터">고객센터</a></li>
+            <li><label class="fas fa-search s_btn"></label></li>
+          </ul>
+        </nav>
+
+        <!-- 검색폼 -->
+        <div id="search_box">
+          <fieldset class="search">
+            <legend>검색</legend>
+            <input type="search" id="search" placeholder="검색어를 입력하세요" maxlength="50" autofocus>
+            <label for="search" class="fas fa-search"></label>
+          </fieldset>
+          <label class="fas fa-xmark"></label>
+        </div>
+      </div>
+    </header>
+
+    <!-- 메뉴 영역 -->
+    <main>
+      <article>
+        <h2>TGIF's Menu</h2>
+        <!-- MENU 내비게이션 -->
+
+        <ul class="menu_lnb">
+          <li><a href="#" title="신메뉴 보기" class="on" id="btn01">신메뉴</a></li>
+          <li><a href="#" title="DELIVERY 보기" id="btn02">DELIVERY</a></li>
+          <li><a href="#" title="런치세트 보기" id="btn03">런치세트</a></li>
+          <li><a href="#" title="시그니처그릴 보기" id="btn04">시그니처그릴</a></li>
+          <li><a href="#" title="파스타&라이스 보기" id="btn05">파스타&라이스</a></li>
+          <li><a href="#" title="샐러드 보기" id="btn06">샐러드</a></li>
+          <li><a href="#" title="키즈메뉴 보기" id="btn07">키즈메뉴</a></li>
+        </ul>
+
+        <ul class="menu_container" id="tbox1">
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 01.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">갈릭 바베큐 폭립<br><span>32,000원<br><br></span>55도의 수비드 기법을 활용하여 마이야르 반응을 일으켜 육즙을 살리고
+                    달짝지근한 갈릭소스와 토핑을 올려 풍미까지 즐길수있는 시그니처 메뉴<br><br>
+                    원산지:호주산</p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">갈릭 바베큐 폭립<br><span>32,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 02.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">워터에이징 티본 스테이크<br><span>38,000원</span><br><br>5일동안 워터에이징 기법을 활용하여 저온 숙성후
+                    기름에 튀기듯 빠르게 튀겨내어 육향을 살려낸
+                    TGI메인 대표 메뉴~!<br><br>원산지 : 가나산</p>
+
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">워터에이징 티본 스테이크<br><span>38,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 03.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스모크 그릴 스테이크<br><span>28,000원</span><br><br>
+                    62시간동안 장인정신으로 참숯향을 입혀
+                    육즙은 살리고 그릴로 구워내는
+                    아메리칸 스타일 스테이크~! <br><br>원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스모크 그릴 스테이크<br><span>28,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 04.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">토마토 베이컨 어니언 데릴 디럭스 햄버거<br><span>12,000원</span><br><br>TGI의 시그니처 앵거스 비프패티와 토종효모로
+                    발효시킨 빵과 TGI만의 훈연기술로 만들어낸 베이컨과의 만남!<br><br>
+                    원산지:국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">토마토 베이컨 디럭스 햄버거<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 05.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">립 아이 포테이토 스테이크<br><span>18,000원</span><br><br>
+                    TGI만의 특제 시즈닝을 첨가하여 보다 감칠맛 나는 육질을 즐겨보세요~! 감자튀김은 써비스~
+                    <br><br>
+                    원산지:호주산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">립 아이 포테이토 스테이크<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 06.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span><br><br>
+                    크리미한 TGI특제 크림소스와 버섯을 함께 볶아낸
+                    크림스파게티!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 07.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">TGI 저탄고지 샐러드<br><span>9,000원</span><br><br>
+                    파티겸 TGI에 왔는데 다이어트중이라면?
+                    저탄고지 샐러드를 즐겨보세요!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">TGI 저탄고지 샐러드<br><span>9,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 08.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">하와이안 스테이크 볶음밥<br><span>11,000원</span><br><br>
+                    TGI 안심스테이크와 함께 볶아낸 하와이안풍 볶음밥!
+                    <br><br>
+                    원산지 : 칠레산(스테이크)
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">하와이안 스테이크 볶음밥<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 09.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">치즈 화덕 토마토 리조또<br><span>12,000원</span><br><br>
+                    치즈와 TGI의 특제소스를 배합하여 화덕에 구워낸
+                    이탈리안풍 리조또
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">치즈 화덕 토마토 리조또<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 10.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span><br><br>
+                    미디움 레어로 구워낸 안심스테이크와 새우튀김의만남!<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 11.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">제철 과일<br><span>11,000원</span><br><br>
+                    제철에 맞는 과일을 알맞은 크기로 썰어냅니다<br>
+                    <br><br>
+                    원산지 : 국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">제철 과일<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 12.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽 <br><span>32,000원</span><br><br>부드럽고 육즙 가득한 최고급 안심스테이크<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽<br><span>32,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 13.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽(유아용)<br><span>12,000원</span><br><br>
+                    아이도 스테이크를 즐기고 싶다면?<br>
+                    (주문 전 종업원께서 여쭤봅니다.)
+                    <br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽(유아용)<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 14.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">화덕 리코타 치즈 피자<br><span>15,000원</span><br><br>
+                    이탈리아산 우유를 원료로 만든 비숙성 연질치즈와 토마토소스와 함께 화덕에서 구워낸 피자
+                    <br><br>
+                    원산지 : 이탈리아
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">화덕 리코타 치즈 피자<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 15.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">멕시코 치킨 스테이크<br><span>13,000원</span>
+                    <br><br>
+                    데리야끼 소스를 발라 24시간 숙성후 야채와 과일과 함께 볶아내는 멕시코 치킨 스테이크<br><br>
+                    원산지 : 멕시코
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">멕시코 치킨 스테이크<br><span>13,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 16.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">바베큐폭립 스테이크 팩<br><span>42,000원</span><br><br>
+                    바베큐폭립과 스테이크의 조화로운 만남!<br>
+                    두가지 맛을 느껴보세요!<br><br>
+                    원산지 : 칠레산
+
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">바베큐 스테이크 팩<br><span>42,000원</span></p>
+          </li>
+        </ul>
+
+        <ul class="menu_container" id="tbox2">
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 02.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">워터에이징 티본 스테이크<br><span>38,000원</span><br><br>5일동안 워터에이징 기법을 활용하여 저온 숙성후
+                    기름에 튀기듯 빠르게 튀겨내어 육향을 살려낸
+                    TGI메인 대표 메뉴~!<br><br>원산지 : 가나산</p>
+
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">워터에이징 티본 스테이크<br><span>38,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 03.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스모크 그릴 스테이크<br><span>28,000원</span><br><br>
+                    62시간동안 장인정신으로 참숯향을 입혀
+                    육즙은 살리고 그릴로 구워내는
+                    아메리칸 스타일 스테이크~! <br><br>원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스모크 그릴 스테이크<br><span>28,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 04.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">토마토 베이컨 어니언 데릴 디럭스 햄버거<br><span>12,000원</span><br><br>TGI의 시그니처 앵거스 비프패티와 토종효모로
+                    발효시킨 빵과 TGI만의 훈연기술로 만들어낸 베이컨과의 만남!<br><br>
+                    원산지:국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">토마토 베이컨 디럭스 햄버거<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 01.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">갈릭 바베큐 폭립<br><span>32,000원<br><br></span>55도의 수비드 기법을 활용하여 마이야르 반응을 일으켜 육즙을 살리고
+                    달짝지근한 갈릭소스와 토핑을 올려 풍미까지 즐길수있는 시그니처 메뉴<br><br>
+                    원산지:호주산</p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">갈릭 바베큐 폭립<br><span>32,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 06.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span><br><br>
+                    크리미한 TGI특제 크림소스와 버섯을 함께 볶아낸
+                    크림스파게티!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 07.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">TGI 저탄고지 샐러드<br><span>9,000원</span><br><br>
+                    파티겸 TGI에 왔는데 다이어트중이라면?
+                    저탄고지 샐러드를 즐겨보세요!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">TGI 저탄고지 샐러드<br><span>9,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 05.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">립 아이 포테이토 스테이크<br><span>18,000원</span><br><br>
+                    TGI만의 특제 시즈닝을 첨가하여 보다 감칠맛 나는 육질을 즐겨보세요~! 감자튀김은 써비스~
+                    <br><br>
+                    원산지:호주산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">립 아이 포테이토 스테이크<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 09.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">치즈 화덕 토마토 리조또<br><span>12,000원</span><br><br>
+                    치즈와 TGI의 특제소스를 배합하여 화덕에 구워낸
+                    이탈리안풍 리조또
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">치즈 화덕 토마토 리조또<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 10.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span><br><br>
+                    미디움 레어로 구워낸 안심스테이크와 새우튀김의만남!<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 08.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">하와이안 스테이크 볶음밥<br><span>11,000원</span><br><br>
+                    TGI 안심스테이크와 함께 볶아낸 하와이안풍 볶음밥!
+                    <br><br>
+                    원산지 : 칠레산(스테이크)
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">하와이안 스테이크 볶음밥<br><span>11,000원</span></p>
+          </li>
+
+
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 12.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽 <br><span>32,000원</span><br><br>부드럽고 육즙 가득한 최고급 안심스테이크<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽<br><span>32,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 13.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽(유아용)<br><span>12,000원</span><br><br>
+                    아이도 스테이크를 즐기고 싶다면?<br>
+                    (주문 전 종업원께서 여쭤봅니다.)
+                    <br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽(유아용)<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 14.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">화덕 리코타 치즈 피자<br><span>15,000원</span><br><br>
+                    이탈리아산 우유를 원료로 만든 비숙성 연질치즈와 토마토소스와 함께 화덕에서 구워낸 피자
+                    <br><br>
+                    원산지 : 이탈리아
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">화덕 리코타 치즈 피자<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 11.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">제철 과일<br><span>11,000원</span><br><br>
+                    제철에 맞는 과일을 알맞은 크기로 썰어냅니다<br>
+                    <br><br>
+                    원산지 : 국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">제철 과일<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 15.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">멕시코 치킨 스테이크<br><span>13,000원</span>
+                    <br><br>
+                    데리야끼 소스를 발라 24시간 숙성후 야채와 과일과 함께 볶아내는 멕시코 치킨 스테이크<br><br>
+                    원산지 : 멕시코
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">멕시코 치킨 스테이크<br><span>13,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 16.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">바베큐폭립 스테이크 팩<br><span>42,000원</span><br><br>
+                    바베큐폭립과 스테이크의 조화로운 만남!<br>
+                    두가지 맛을 느껴보세요!<br><br>
+                    원산지 : 칠레산
+
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">바베큐 스테이크 팩<br><span>42,000원</span></p>
+          </li>
+        </ul>
+
+        <ul class="menu_container" id="tbox3">
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 05.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">립 아이 포테이토 스테이크<br><span>18,000원</span><br><br>
+                    TGI만의 특제 시즈닝을 첨가하여 보다 감칠맛 나는 육질을 즐겨보세요~! 감자튀김은 써비스~
+                    <br><br>
+                    원산지:호주산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">립 아이 포테이토 스테이크<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 09.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">치즈 화덕 토마토 리조또<br><span>12,000원</span><br><br>
+                    치즈와 TGI의 특제소스를 배합하여 화덕에 구워낸
+                    이탈리안풍 리조또
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">치즈 화덕 토마토 리조또<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 03.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스모크 그릴 스테이크<br><span>28,000원</span><br><br>
+                    62시간동안 장인정신으로 참숯향을 입혀
+                    육즙은 살리고 그릴로 구워내는
+                    아메리칸 스타일 스테이크~! <br><br>원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스모크 그릴 스테이크<br><span>28,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 16.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">바베큐폭립 스테이크 팩<br><span>42,000원</span><br><br>
+                    바베큐폭립과 스테이크의 조화로운 만남!<br>
+                    두가지 맛을 느껴보세요!<br><br>
+                    원산지 : 칠레산
+
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">바베큐 스테이크 팩<br><span>42,000원</span></p>
+          </li>
+
+
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 01.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">갈릭 바베큐 폭립<br><span>32,000원<br><br></span>55도의 수비드 기법을 활용하여 마이야르 반응을 일으켜 육즙을 살리고
+                    달짝지근한 갈릭소스와 토핑을 올려 풍미까지 즐길수있는 시그니처 메뉴<br><br>
+                    원산지:호주산</p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">갈릭 바베큐 폭립<br><span>32,000원</span>
+            </p>
+          </li>
+
+
+
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 07.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">TGI 저탄고지 샐러드<br><span>9,000원</span><br><br>
+                    파티겸 TGI에 왔는데 다이어트중이라면?
+                    저탄고지 샐러드를 즐겨보세요!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">TGI 저탄고지 샐러드<br><span>9,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 08.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">하와이안 스테이크 볶음밥<br><span>11,000원</span><br><br>
+                    TGI 안심스테이크와 함께 볶아낸 하와이안풍 볶음밥!
+                    <br><br>
+                    원산지 : 칠레산(스테이크)
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">하와이안 스테이크 볶음밥<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 11.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">제철 과일<br><span>11,000원</span><br><br>
+                    제철에 맞는 과일을 알맞은 크기로 썰어냅니다<br>
+                    <br><br>
+                    원산지 : 국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">제철 과일<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 02.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">워터에이징 티본 스테이크<br><span>38,000원</span><br><br>5일동안 워터에이징 기법을 활용하여 저온 숙성후
+                    기름에 튀기듯 빠르게 튀겨내어 육향을 살려낸
+                    TGI메인 대표 메뉴~!<br><br>원산지 : 가나산</p>
+
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">워터에이징 티본 스테이크<br><span>38,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 10.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span><br><br>
+                    미디움 레어로 구워낸 안심스테이크와 새우튀김의만남!<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 06.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span><br><br>
+                    크리미한 TGI특제 크림소스와 버섯을 함께 볶아낸
+                    크림스파게티!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span></p>
+          </li>
+
+
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 12.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽 <br><span>32,000원</span><br><br>부드럽고 육즙 가득한 최고급 안심스테이크<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽<br><span>32,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 13.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽(유아용)<br><span>12,000원</span><br><br>
+                    아이도 스테이크를 즐기고 싶다면?<br>
+                    (주문 전 종업원께서 여쭤봅니다.)
+                    <br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽(유아용)<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 14.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">화덕 리코타 치즈 피자<br><span>15,000원</span><br><br>
+                    이탈리아산 우유를 원료로 만든 비숙성 연질치즈와 토마토소스와 함께 화덕에서 구워낸 피자
+                    <br><br>
+                    원산지 : 이탈리아
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">화덕 리코타 치즈 피자<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 15.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">멕시코 치킨 스테이크<br><span>13,000원</span>
+                    <br><br>
+                    데리야끼 소스를 발라 24시간 숙성후 야채와 과일과 함께 볶아내는 멕시코 치킨 스테이크<br><br>
+                    원산지 : 멕시코
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">멕시코 치킨 스테이크<br><span>13,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 04.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">토마토 베이컨 어니언 데릴 디럭스 햄버거<br><span>12,000원</span><br><br>TGI의 시그니처 앵거스 비프패티와 토종효모로
+                    발효시킨 빵과 TGI만의 훈연기술로 만들어낸 베이컨과의 만남!<br><br>
+                    원산지:국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">토마토 베이컨 디럭스 햄버거<br><span>12,000원</span></p>
+
+        </ul>
+        <ul class="menu_container" id="tbox4">
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 10.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span><br><br>
+                    미디움 레어로 구워낸 안심스테이크와 새우튀김의만남!<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 05.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">립 아이 포테이토 스테이크<br><span>18,000원</span><br><br>
+                    TGI만의 특제 시즈닝을 첨가하여 보다 감칠맛 나는 육질을 즐겨보세요~! 감자튀김은 써비스~
+                    <br><br>
+                    원산지:호주산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">립 아이 포테이토 스테이크<br><span>18,000원</span></p>
+          </li>
+
+
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 04.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">토마토 베이컨 어니언 데릴 디럭스 햄버거<br><span>12,000원</span><br><br>TGI의 시그니처 앵거스 비프패티와 토종효모로
+                    발효시킨 빵과 TGI만의 훈연기술로 만들어낸 베이컨과의 만남!<br><br>
+                    원산지:국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">토마토 베이컨 디럭스 햄버거<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 02.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">워터에이징 티본 스테이크<br><span>38,000원</span><br><br>5일동안 워터에이징 기법을 활용하여 저온 숙성후
+                    기름에 튀기듯 빠르게 튀겨내어 육향을 살려낸
+                    TGI메인 대표 메뉴~!<br><br>원산지 : 가나산</p>
+
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">워터에이징 티본 스테이크<br><span>38,000원</span></p>
+          </li>
+
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 08.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">하와이안 스테이크 볶음밥<br><span>11,000원</span><br><br>
+                    TGI 안심스테이크와 함께 볶아낸 하와이안풍 볶음밥!
+                    <br><br>
+                    원산지 : 칠레산(스테이크)
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">하와이안 스테이크 볶음밥<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 07.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">TGI 저탄고지 샐러드<br><span>9,000원</span><br><br>
+                    파티겸 TGI에 왔는데 다이어트중이라면?
+                    저탄고지 샐러드를 즐겨보세요!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">TGI 저탄고지 샐러드<br><span>9,000원</span></p>
+          </li>
+
+
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 06.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span><br><br>
+                    크리미한 TGI특제 크림소스와 버섯을 함께 볶아낸
+                    크림스파게티!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 09.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">치즈 화덕 토마토 리조또<br><span>12,000원</span><br><br>
+                    치즈와 TGI의 특제소스를 배합하여 화덕에 구워낸
+                    이탈리안풍 리조또
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">치즈 화덕 토마토 리조또<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 15.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">멕시코 치킨 스테이크<br><span>13,000원</span>
+                    <br><br>
+                    데리야끼 소스를 발라 24시간 숙성후 야채와 과일과 함께 볶아내는 멕시코 치킨 스테이크<br><br>
+                    원산지 : 멕시코
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">멕시코 치킨 스테이크<br><span>13,000원</span></p>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 01.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">갈릭 바베큐 폭립<br><span>32,000원<br><br></span>55도의 수비드 기법을 활용하여 마이야르 반응을 일으켜 육즙을 살리고
+                    달짝지근한 갈릭소스와 토핑을 올려 풍미까지 즐길수있는 시그니처 메뉴<br><br>
+                    원산지:호주산</p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">갈릭 바베큐 폭립<br><span>32,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 14.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">화덕 리코타 치즈 피자<br><span>15,000원</span><br><br>
+                    이탈리아산 우유를 원료로 만든 비숙성 연질치즈와 토마토소스와 함께 화덕에서 구워낸 피자
+                    <br><br>
+                    원산지 : 이탈리아
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">화덕 리코타 치즈 피자<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 12.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽 <br><span>32,000원</span><br><br>부드럽고 육즙 가득한 최고급 안심스테이크<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽<br><span>32,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 13.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽(유아용)<br><span>12,000원</span><br><br>
+                    아이도 스테이크를 즐기고 싶다면?<br>
+                    (주문 전 종업원께서 여쭤봅니다.)
+                    <br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽(유아용)<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 11.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">제철 과일<br><span>11,000원</span><br><br>
+                    제철에 맞는 과일을 알맞은 크기로 썰어냅니다<br>
+                    <br><br>
+                    원산지 : 국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">제철 과일<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 03.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스모크 그릴 스테이크<br><span>28,000원</span><br><br>
+                    62시간동안 장인정신으로 참숯향을 입혀
+                    육즙은 살리고 그릴로 구워내는
+                    아메리칸 스타일 스테이크~! <br><br>원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스모크 그릴 스테이크<br><span>28,000원</span></p>
+          </li>
+
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 04.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">토마토 베이컨 어니언 데릴 디럭스 햄버거<br><span>12,000원</span><br><br>TGI의 시그니처 앵거스 비프패티와 토종효모로
+                    발효시킨 빵과 TGI만의 훈연기술로 만들어낸 베이컨과의 만남!<br><br>
+                    원산지:국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">토마토 베이컨 디럭스 햄버거<br><span>12,000원</span></p>
+
+          </li>
+
+
+        </ul>
+        <ul class="menu_container" id="tbox5">
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 01.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">갈릭 바베큐 폭립<br><span>32,000원<br><br></span>55도의 수비드 기법을 활용하여 마이야르 반응을 일으켜 육즙을 살리고
+                    달짝지근한 갈릭소스와 토핑을 올려 풍미까지 즐길수있는 시그니처 메뉴<br><br>
+                    원산지:호주산</p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">갈릭 바베큐 폭립<br><span>32,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 02.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">워터에이징 티본 스테이크<br><span>38,000원</span><br><br>5일동안 워터에이징 기법을 활용하여 저온 숙성후
+                    기름에 튀기듯 빠르게 튀겨내어 육향을 살려낸
+                    TGI메인 대표 메뉴~!<br><br>원산지 : 가나산</p>
+
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">워터에이징 티본 스테이크<br><span>38,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 03.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스모크 그릴 스테이크<br><span>28,000원</span><br><br>
+                    62시간동안 장인정신으로 참숯향을 입혀
+                    육즙은 살리고 그릴로 구워내는
+                    아메리칸 스타일 스테이크~! <br><br>원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스모크 그릴 스테이크<br><span>28,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 04.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">토마토 베이컨 어니언 데릴 디럭스 햄버거<br><span>12,000원</span><br><br>TGI의 시그니처 앵거스 비프패티와 토종효모로
+                    발효시킨 빵과 TGI만의 훈연기술로 만들어낸 베이컨과의 만남!<br><br>
+                    원산지:국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">토마토 베이컨 디럭스 햄버거<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 05.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">립 아이 포테이토 스테이크<br><span>18,000원</span><br><br>
+                    TGI만의 특제 시즈닝을 첨가하여 보다 감칠맛 나는 육질을 즐겨보세요~! 감자튀김은 써비스~
+                    <br><br>
+                    원산지:호주산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">립 아이 포테이토 스테이크<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 06.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span><br><br>
+                    크리미한 TGI특제 크림소스와 버섯을 함께 볶아낸
+                    크림스파게티!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 07.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">TGI 저탄고지 샐러드<br><span>9,000원</span><br><br>
+                    파티겸 TGI에 왔는데 다이어트중이라면?
+                    저탄고지 샐러드를 즐겨보세요!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">TGI 저탄고지 샐러드<br><span>9,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 08.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">하와이안 스테이크 볶음밥<br><span>11,000원</span><br><br>
+                    TGI 안심스테이크와 함께 볶아낸 하와이안풍 볶음밥!
+                    <br><br>
+                    원산지 : 칠레산(스테이크)
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">하와이안 스테이크 볶음밥<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 09.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">치즈 화덕 토마토 리조또<br><span>12,000원</span><br><br>
+                    치즈와 TGI의 특제소스를 배합하여 화덕에 구워낸
+                    이탈리안풍 리조또
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">치즈 화덕 토마토 리조또<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 10.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span><br><br>
+                    미디움 레어로 구워낸 안심스테이크와 새우튀김의만남!<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 11.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">제철 과일<br><span>11,000원</span><br><br>
+                    제철에 맞는 과일을 알맞은 크기로 썰어냅니다<br>
+                    <br><br>
+                    원산지 : 국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">제철 과일<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 12.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽 <br><span>32,000원</span><br><br>부드럽고 육즙 가득한 최고급 안심스테이크<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽<br><span>32,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 13.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽(유아용)<br><span>12,000원</span><br><br>
+                    아이도 스테이크를 즐기고 싶다면?<br>
+                    (주문 전 종업원께서 여쭤봅니다.)
+                    <br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽(유아용)<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 14.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">화덕 리코타 치즈 피자<br><span>15,000원</span><br><br>
+                    이탈리아산 우유를 원료로 만든 비숙성 연질치즈와 토마토소스와 함께 화덕에서 구워낸 피자
+                    <br><br>
+                    원산지 : 이탈리아
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">화덕 리코타 치즈 피자<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 15.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">멕시코 치킨 스테이크<br><span>13,000원</span>
+                    <br><br>
+                    데리야끼 소스를 발라 24시간 숙성후 야채와 과일과 함께 볶아내는 멕시코 치킨 스테이크<br><br>
+                    원산지 : 멕시코
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">멕시코 치킨 스테이크<br><span>13,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 16.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">바베큐폭립 스테이크 팩<br><span>42,000원</span><br><br>
+                    바베큐폭립과 스테이크의 조화로운 만남!<br>
+                    두가지 맛을 느껴보세요!<br><br>
+                    원산지 : 칠레산
+
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">바베큐 스테이크 팩<br><span>42,000원</span></p>
+          </li>
+        </ul>
+        <ul class="menu_container" id="tbox6">
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 01.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">갈릭 바베큐 폭립<br><span>32,000원<br><br></span>55도의 수비드 기법을 활용하여 마이야르 반응을 일으켜 육즙을 살리고
+                    달짝지근한 갈릭소스와 토핑을 올려 풍미까지 즐길수있는 시그니처 메뉴<br><br>
+                    원산지:호주산</p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">갈릭 바베큐 폭립<br><span>32,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 02.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">워터에이징 티본 스테이크<br><span>38,000원</span><br><br>5일동안 워터에이징 기법을 활용하여 저온 숙성후
+                    기름에 튀기듯 빠르게 튀겨내어 육향을 살려낸
+                    TGI메인 대표 메뉴~!<br><br>원산지 : 가나산</p>
+
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">워터에이징 티본 스테이크<br><span>38,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 03.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스모크 그릴 스테이크<br><span>28,000원</span><br><br>
+                    62시간동안 장인정신으로 참숯향을 입혀
+                    육즙은 살리고 그릴로 구워내는
+                    아메리칸 스타일 스테이크~! <br><br>원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스모크 그릴 스테이크<br><span>28,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 04.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">토마토 베이컨 어니언 데릴 디럭스 햄버거<br><span>12,000원</span><br><br>TGI의 시그니처 앵거스 비프패티와 토종효모로
+                    발효시킨 빵과 TGI만의 훈연기술로 만들어낸 베이컨과의 만남!<br><br>
+                    원산지:국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">토마토 베이컨 디럭스 햄버거<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 05.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">립 아이 포테이토 스테이크<br><span>18,000원</span><br><br>
+                    TGI만의 특제 시즈닝을 첨가하여 보다 감칠맛 나는 육질을 즐겨보세요~! 감자튀김은 써비스~
+                    <br><br>
+                    원산지:호주산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">립 아이 포테이토 스테이크<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 06.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span><br><br>
+                    크리미한 TGI특제 크림소스와 버섯을 함께 볶아낸
+                    크림스파게티!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 07.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">TGI 저탄고지 샐러드<br><span>9,000원</span><br><br>
+                    파티겸 TGI에 왔는데 다이어트중이라면?
+                    저탄고지 샐러드를 즐겨보세요!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">TGI 저탄고지 샐러드<br><span>9,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 08.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">하와이안 스테이크 볶음밥<br><span>11,000원</span><br><br>
+                    TGI 안심스테이크와 함께 볶아낸 하와이안풍 볶음밥!
+                    <br><br>
+                    원산지 : 칠레산(스테이크)
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">하와이안 스테이크 볶음밥<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 09.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">치즈 화덕 토마토 리조또<br><span>12,000원</span><br><br>
+                    치즈와 TGI의 특제소스를 배합하여 화덕에 구워낸
+                    이탈리안풍 리조또
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">치즈 화덕 토마토 리조또<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 10.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span><br><br>
+                    미디움 레어로 구워낸 안심스테이크와 새우튀김의만남!<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 11.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">제철 과일<br><span>11,000원</span><br><br>
+                    제철에 맞는 과일을 알맞은 크기로 썰어냅니다<br>
+                    <br><br>
+                    원산지 : 국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">제철 과일<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 12.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽 <br><span>32,000원</span><br><br>부드럽고 육즙 가득한 최고급 안심스테이크<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽<br><span>32,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 13.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽(유아용)<br><span>12,000원</span><br><br>
+                    아이도 스테이크를 즐기고 싶다면?<br>
+                    (주문 전 종업원께서 여쭤봅니다.)
+                    <br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽(유아용)<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 14.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">화덕 리코타 치즈 피자<br><span>15,000원</span><br><br>
+                    이탈리아산 우유를 원료로 만든 비숙성 연질치즈와 토마토소스와 함께 화덕에서 구워낸 피자
+                    <br><br>
+                    원산지 : 이탈리아
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">화덕 리코타 치즈 피자<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 15.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">멕시코 치킨 스테이크<br><span>13,000원</span>
+                    <br><br>
+                    데리야끼 소스를 발라 24시간 숙성후 야채와 과일과 함께 볶아내는 멕시코 치킨 스테이크<br><br>
+                    원산지 : 멕시코
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">멕시코 치킨 스테이크<br><span>13,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 16.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">바베큐폭립 스테이크 팩<br><span>42,000원</span><br><br>
+                    바베큐폭립과 스테이크의 조화로운 만남!<br>
+                    두가지 맛을 느껴보세요!<br><br>
+                    원산지 : 칠레산
+
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">바베큐 스테이크 팩<br><span>42,000원</span></p>
+          </li>
+        </ul>
+        <ul class="menu_container" id="tbox7">
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 01.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">갈릭 바베큐 폭립<br><span>32,000원<br><br></span>55도의 수비드 기법을 활용하여 마이야르 반응을 일으켜 육즙을 살리고
+                    달짝지근한 갈릭소스와 토핑을 올려 풍미까지 즐길수있는 시그니처 메뉴<br><br>
+                    원산지:호주산</p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">갈릭 바베큐 폭립<br><span>32,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 02.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">워터에이징 티본 스테이크<br><span>38,000원</span><br><br>5일동안 워터에이징 기법을 활용하여 저온 숙성후
+                    기름에 튀기듯 빠르게 튀겨내어 육향을 살려낸
+                    TGI메인 대표 메뉴~!<br><br>원산지 : 가나산</p>
+
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">워터에이징 티본 스테이크<br><span>38,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 03.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스모크 그릴 스테이크<br><span>28,000원</span><br><br>
+                    62시간동안 장인정신으로 참숯향을 입혀
+                    육즙은 살리고 그릴로 구워내는
+                    아메리칸 스타일 스테이크~! <br><br>원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스모크 그릴 스테이크<br><span>28,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 04.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">토마토 베이컨 어니언 데릴 디럭스 햄버거<br><span>12,000원</span><br><br>TGI의 시그니처 앵거스 비프패티와 토종효모로
+                    발효시킨 빵과 TGI만의 훈연기술로 만들어낸 베이컨과의 만남!<br><br>
+                    원산지:국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">토마토 베이컨 디럭스 햄버거<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 05.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">립 아이 포테이토 스테이크<br><span>18,000원</span><br><br>
+                    TGI만의 특제 시즈닝을 첨가하여 보다 감칠맛 나는 육질을 즐겨보세요~! 감자튀김은 써비스~
+                    <br><br>
+                    원산지:호주산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">립 아이 포테이토 스테이크<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 06.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span><br><br>
+                    크리미한 TGI특제 크림소스와 버섯을 함께 볶아낸
+                    크림스파게티!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">크림 머쉬룸 토마토 파스타<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 07.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">TGI 저탄고지 샐러드<br><span>9,000원</span><br><br>
+                    파티겸 TGI에 왔는데 다이어트중이라면?
+                    저탄고지 샐러드를 즐겨보세요!
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">TGI 저탄고지 샐러드<br><span>9,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 08.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">하와이안 스테이크 볶음밥<br><span>11,000원</span><br><br>
+                    TGI 안심스테이크와 함께 볶아낸 하와이안풍 볶음밥!
+                    <br><br>
+                    원산지 : 칠레산(스테이크)
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">하와이안 스테이크 볶음밥<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 09.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">치즈 화덕 토마토 리조또<br><span>12,000원</span><br><br>
+                    치즈와 TGI의 특제소스를 배합하여 화덕에 구워낸
+                    이탈리안풍 리조또
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">치즈 화덕 토마토 리조또<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 10.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span><br><br>
+                    미디움 레어로 구워낸 안심스테이크와 새우튀김의만남!<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">스트립 스테이크 쉬림프 콤보<br><span>29,000원</span>
+            </p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 11.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">제철 과일<br><span>11,000원</span><br><br>
+                    제철에 맞는 과일을 알맞은 크기로 썰어냅니다<br>
+                    <br><br>
+                    원산지 : 국내산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">제철 과일<br><span>11,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 12.jpg" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽 <br><span>32,000원</span><br><br>부드럽고 육즙 가득한 최고급 안심스테이크<br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽<br><span>32,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 13.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">휠렛 미뇽(유아용)<br><span>12,000원</span><br><br>
+                    아이도 스테이크를 즐기고 싶다면?<br>
+                    (주문 전 종업원께서 여쭤봅니다.)
+                    <br><br>
+                    원산지 : 칠레산
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">휠렛 미뇽(유아용)<br><span>12,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 14.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">화덕 리코타 치즈 피자<br><span>15,000원</span><br><br>
+                    이탈리아산 우유를 원료로 만든 비숙성 연질치즈와 토마토소스와 함께 화덕에서 구워낸 피자
+                    <br><br>
+                    원산지 : 이탈리아
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">화덕 리코타 치즈 피자<br><span>18,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 15.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">멕시코 치킨 스테이크<br><span>13,000원</span>
+                    <br><br>
+                    데리야끼 소스를 발라 24시간 숙성후 야채와 과일과 함께 볶아내는 멕시코 치킨 스테이크<br><br>
+                    원산지 : 멕시코
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">멕시코 치킨 스테이크<br><span>13,000원</span></p>
+          </li>
+
+          <li class="menu_item">
+            <div class="menu_box">
+              <a href="#" title="메뉴 상세 정보 보기">
+                <img src="./img/sub_menu 16.png" alt="메뉴1">
+                <figcaption>
+                  <p class="fig_name">바베큐폭립 스테이크 팩<br><span>42,000원</span><br><br>
+                    바베큐폭립과 스테이크의 조화로운 만남!<br>
+                    두가지 맛을 느껴보세요!<br><br>
+                    원산지 : 칠레산
+
+                  </p>
+                </figcaption>
+              </a>
+            </div>
+            <p class="name">바베큐 스테이크 팩<br><span>42,000원</span></p>
+          </li>
+        </ul>
+      </article>
+      <!-- 탑버튼 -->
+      <aside>
+        <a href="#" title="위로 바로 가기" class="top_btn"><i class="fas fa-angle-up"></i>TOP</a>
+      </aside>
+
+    </main>
+    <script>
+      $(document).ready(function () {
+        $('.menu_container').hide();
+        $('#tbox1').show();
+
+        $('#btn01').click(function () {
+          $('.menu_container').hide();
+          $('#tbox1').show();
+        });
+
+        $('#btn02').click(function () {
+          $('.menu_container').hide();
+          $('#tbox2').show();
+        });
+
+        $('#btn03').click(function () {
+          $('.menu_container').hide();
+          $('#tbox3').show();
+        });
+
+        $('#btn04').click(function () {
+          $('.menu_container').hide();
+          $('#tbox4').show();
+        });
+
+        $('#btn05').click(function () {
+          $('.menu_container').hide();
+          $('#tbox5').show();
+        });
+        $('#btn06').click(function () {
+          $('.menu_container').hide();
+          $('#tbox6').show();
+        });
+        $('#btn07').click(function () {
+          $('.menu_container').hide();
+          $('#tbox7').show();
+        });
+      });
+    </script>
+
+
+    <!-- 푸터 영역 -->
+    <footer>
+      <div class="f_wrap">
+        <h1><a href="" title="상단으로 올라 가기"><img src="../img/logo.png" alt="로고"></a></h1>
+        <div class="f_right">
+          <nav class="f_gnb">
+            <ul class="foo_l">
+              <li><a href="#" title="홈페이지 이용약관">홈페이지 이용약관</a></li>
+              <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+              <li><a href="#" title="회사소개">회사소개</a></li>
+              <li><a href="#" title="사이트맵">사이트맵</a></li>
+              <li><a href="#" title="영상정보처리기기 운영관리 방침">영상정보처리기기 운영관리 방침</a></li>
+            </ul>
+          </nav>
+          <ul class="awards">
+            <li><img src="../img/f_brandstar.jpg" alt="브랜드스타">
+              <p>2018 대한민국 브랜드스타</p>
+            </li>
+            <li><img src="../img/f_ncsi.jpg" alt="ncsi">
+              <p>2015 국가고객만족도 지수 패밀리레스토랑 부문 1위(총 7회 수상)</p>
+            </li>
+          </ul>
+        </div>
+        <address>
+          <div class="f_text">
+            <p>(주) 엠에프지코리아</p>
+            <p><span>대표자 : 윤나라</span><span>주소 : 서울특별시 중구 동호로 15길 31 중하빌딩 B동</span></p>
+            <p><span>사업자등록번호 : 261-81-16391 </span><a href="#;" class="btn-toast-pop">사업자정보확인</a></p>
+            <p class="copy">COPYRIGHT ⓒ MFGKOREA. ALL RIGHT RESERVED</p>
+          </div>
+          <div class="tel-text">
+            <p class="home-number">홈페이지 관련 문의<em class="roboto">070-0000-0000</em></p>
+            <p class="site-number">상담시간 : 월~금 10:00~17:00(토/일, 공휴일 휴무, 점심시간 12:00~13:30)</p>
+            <p class="key-number">대표번호<em class="roboto">2286-8800</em>&nbsp;&nbsp;/&nbsp;&nbsp;딜리버리 주문번호<em
+                class="roboto">0000-0000</em></p>
+          </div>
+        </address>
+      </div>
+    </footer>
+  </form>
+</body>
+
+</html>

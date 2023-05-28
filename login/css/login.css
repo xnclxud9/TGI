@@ -1,0 +1,175 @@
+@charset "utf-8";
+main{
+  width: 100%;
+  margin: 0 auto;
+}
+.login_wrap{
+  width: 63%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  }
+.login_wrap h3, .log_pg legend, fieldset::after{
+  display:none;
+}
+.log_pg{
+  width: 50%;
+  margin: auto;
+}
+.login_wrap fieldset{
+  width: 85%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+.login_wrap fieldset input[type]{
+    text-indent: 10px;
+    width: 100%; height: 50px;
+    margin-bottom: 10px;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+.login_wrap input:not(#memory):focus{
+  outline: 1px solid #b60000;
+}
+.login_wrap fieldset label{
+  font-size: 14px;
+}
+.login_wrap fieldset input[type=checkbox]{
+    display: inline-block;
+    width: 15px; height: 15px;
+    margin-bottom: 5px;
+    accent-color: #b60000;
+}
+.log_info ul{
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    margin: 15px 0;
+}
+.log_info ul li{
+    margin: 0px 7px;
+    font-size: 14px;
+}
+.log_info ul li:first-child{
+  margin-left: 0;
+}
+.log_info ul li:last-child{
+  margin-right: 0;
+}
+.log_info ul li::after{
+  width: 1px;
+  height: 14px;
+  background: #333;
+  content: "";
+  display: block;
+  position: relative;
+  top: -27px;
+  left: 63px;
+}
+.log_info ul li:nth-child(2)::after{left: 82px;}
+.log_info ul > li:last-child::after{display: none;}
+#log_btn{
+    font-size: 16px;
+    background: #B60000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+#log_btn:hover{
+  border: 1px solid#B60000;
+  color: #B60000;
+  background: #fff;
+}
+.log_sns>ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+.log_sns>p{
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+}
+.log_sns>ul>li img{
+    width: 60px; height: 60px;
+}
+.log_mem{
+    min-width: 400px;
+    width: 40%;
+    margin: 5%;
+    overflow: hidden;
+}
+.log_mem_b{
+  width: 300%;
+  margin: auto 0;
+  display: flex;
+  position: relative;
+}
+.log_mem_b img{
+  width: 100%;
+  min-width: 400px;
+}
+
+@media screen and (min-width:1025px){
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  .login_wrap{
+    width: 80%;
+    display: block;
+  }
+  .log_pg{
+    width: 100%;
+  }
+
+  .log_mem{
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  .log_mem_b{
+    width: 100%;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .log_mem_b li{
+    width: 32%;
+  }
+  .log_mem_b img{
+    width: 100%;
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width:767px){
+  .login_wrap{
+    width: 80%;
+    display: block;
+  }
+  .log_pg{
+    width: 100%;
+  }
+
+  .log_mem{
+    width: 80%;
+    margin: 5% auto;
+  }
+
+  .log_mem_b{
+    width: 100%;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .log_mem_b li{
+    width: 30%;
+  }
+  .log_mem_b img{
+    width: 100%;
+    min-width: 130px;
+  }
+}

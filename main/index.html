@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGI Friday's</title>
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+
+  <!-- 초기화 서식 -->
+  <link rel="stylesheet" href="../css/reset.css" type="text/css">
+  <!-- 공통 서식 -->
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+  <!-- PC 서식 -->
+  <link rel="stylesheet" href="../css/pc.css" type="text/css">
+  <!-- 태블릿 서식-->
+  <link rel="stylesheet" href="../css/tablet.css" type="text/css">
+  <!-- 모바일 서식-->
+  <link rel="stylesheet" href="../css/mobile.css" type="text/css">
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- 제이쿼리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- 공통 스크립트(탑버튼) -->
+  <script src="../script/common.js" defer></script>
+  <!-- 메인 스크립트 -->
+  <script src="./script/main.js" defer></script>
+  <!-- 메인 슬라이드배너 스크립트 -->
+  <script src="./script/main_slide.js" defer></script>
+  <!-- 메뉴 슬라이드배너 스크립트 -->
+  <script src="./script/menu_slide.js" defer></script>
+
+</head>
+
+<body>
+  <form name="search_form" method="post" action="search.php">
+    <input type="checkbox" id="toggle">
+    <!-- 상단 헤더 영역 -->
+    <header>
+      <h1>
+        <a href="index.html" title="메인 화면 바로 가기">
+          <img src="./img/logo.png" alt="상단 로고">
+        </a>
+      </h1>
+
+      <label for="toggle" class="total_btn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <!-- gnb -->
+      <div class="gnb_tab">
+        <nav class="gnb">
+          <ul>
+            <li><a href="#none" title="BRAND">BRAND</a>
+              <ul class="sub">
+                <li><a href="#none" title="ABOUT TGI">ABOUT TGI</a></li>
+                <li><a href="#none" title="TGI 더 맛있게">TGI 더 맛있게</a></li>
+              </ul>
+            </li>
+            <li><a href="../menu/menu.html" title="MENU">MENU</a>
+              <ul class="sub">
+                <li><a href="../menu/menu.html" title="신메뉴">신메뉴</a></li>
+                <li><a href="#none" title="DELIVERY">DELIVERY</a></li>
+                <li><a href="#none" title="런치세트">런치세트</a></li>
+                <li><a href="#none" title="">시그니처그릴</a></li>
+                <li><a href="#none" title="파스타&라이스">파스타&라이스</a></li>
+                <li><a href="#none" title="샐러드">샐러드</a></li>
+                <li><a href="#none" title="키즈메뉴">키즈메뉴</a></li>
+                <li><a href="#none" title="사이드">사이드</a></li>
+                <li><a href="#none" title="음료">음료</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#none" title="MEMBERSHIP">MEMBERSHIP</a>
+              <ul class="sub">
+                <li><a href="#none" title="멤버십혜택">멤버십혜택</a></li>
+                <li><a href="#none" title="홈 TGI">홈 TGI</a></li>
+                <li><a href="#none" title="파티&예약">파티&예약</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#none" title="EVENT">EVENT</a>
+              <ul class="sub">
+                <li><a href="#none" title="이벤트">이벤트</a></li>
+                <li><a href="#none" title="공지사항">공지사항</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#none" title="STORE">STORE</a>
+              <ul class="sub">
+                <li><a href="#none" title="매장찾기">매장찾기</a></li>
+                <li><a href="#none" title="창업문의">창업문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- lnb -->
+        <nav class="lnb">
+          <ul>
+            <li><a href="../login/login.html" title="로그인">로그인</a></li>
+            <li><a href="../join/join.html" title="회원가입">회원가입</a></li>
+            <li><a href="#none" title="고객센터">고객센터</a></li>
+            <li><label class="fas fa-search s_btn"></label></li>
+          </ul>
+        </nav>
+
+        <!-- 검색폼 -->
+        <div id="search_box">
+          <fieldset class="search">
+            <legend>검색</legend>
+            <input type="search" id="search" placeholder="검색어를 입력하세요" maxlength="50" autofocus>
+            <label for="search" class="fas fa-search"></label>
+          </fieldset>
+          <label class="fas fa-xmark"></label>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main>
+
+      <!-- 1. 배너 슬라이드 -->
+      <article class="main_s">
+        <h2>메인 배너 슬라이드</h2>
+        <ul class="bs_btn">
+          <li class="bs_active">
+            <div class="paper-tit">
+              바이킹
+              <br>
+              스테이크
+            </div>
+          </li>
+          <li>
+            <div class="paper-tit">
+              해피
+              <br>
+              패밀리데이
+            </div>
+          </li>
+          <li>
+            <div class="paper-tit">
+              인스타그램
+              <br>
+              이벤트
+            </div>
+          </li>
+          <li>
+            <div class="paper-tit">
+              프렌즈
+              <br>
+              런치&나잇
+            </div>
+          </li>
+          <li>
+            <div class="paper-tit">
+              영화티켓
+              <br>
+              프리메뉴
+            </div>
+          </li>
+        </ul>
+
+        <ul class="slide">
+          <li><a href="#none" title="배너1"><img src="./img/main01.jpg" alt="배너이미지"></a></li>
+          <li><a href="#none" title="배너2"><img src="./img/main02.jpg" alt="배너이미지"></a></li>
+          <li><a href="#none" title="배너3"><img src="./img/main03.jpg" alt="배너이미지"></a></li>
+          <li><a href="#none" title="배너4"><img src="./img/main04.jpg" alt="배너이미지"></a></li>
+          <li><a href="#none" title="배너5"><img src="./img/main05.jpg" alt="배너이미지"></a></li>
+        </ul>
+        <a href="#none" title="" id="prev_btn" class="button"><i class="fas fa-angle-left"></i></a>
+        <a href="#none" title="" id="next_btn" class="button"><i class="fas fa-angle-right"></i></a>
+
+      </article>
+
+      <!-- 2. 브랜드 -->
+      <article class="b_wrap">
+        <h2>BRAND</h2>
+        <div class="b_con">
+          <h3>TGI FRIDAYS</h3>
+          <p class="b_con_t">(Thank God(ness) It's Friday!)</p><br>
+          <p>금요일은 남녀노소 가리지 않고 모두가 기다리는 한 주 최고의 날입니다!</p>
+          <p>'누구나 기다리는 금요일의 설레임을 맛으로 전달하겠다'라는 취지로
+          <p>TGI FRIDAYS의 시작을 열었습니다.</p>
+        </div>
+
+        <div class="b_news">
+          <ul>
+            <li>
+              <a href="#none" title="브랜드로가기">
+                <div class="b_txt">
+                  <span class="sub_m">TGI'S NEW</span>
+                  <span class="b_bold">더욱 새로워진 TGI</span>
+                  <p><span class="point">30주년</span>을 맞이하여
+                    트렌디한 브랜드로 재탄생한 FRIDAY'S
+                    새롭게 달라진 TGIF KOREA를 만나보세요!</p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#none" title="브랜드로가기">
+                <div class="b_txt">
+                  <span class="sub_m">TGI'S HOW</span>
+                  <span class="b_bold">스테이크가 가장 맛있어 지는 5+5</span>
+                  <p>TGI는 드라이에이징 기법을 사용해
+                    <span class="point">5일</span> 동안 최저온 숙성 후 가장 맛있는 두께인 <span class="point">5cm</span>로 썰어내어
+                    진한 육향과 풍미를 제공합니다
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#none" title="브랜드로가기">
+                <div class="b_txt">
+                  <span class="sub_m">TGI'S WHERE</span>
+                  <span class="b_bold">특별한 하루를 만드는 선택!</span>
+                  <p>TGI는 고객님들의 특별한 하루를 위해
+                    국내 15개 매장을 직영으로
+                    운영 &middot; 관리하고 있습니다.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img src="./img/brand_img01.png" alt="브랜드이미지" id="brand-image">
+      </article>
+
+      <!-- 3. 메뉴 슬라이드 -->
+      <article class="menu_slide_wrapper">
+        <h2>TGIF MENU</h2>
+
+        <div class="control_box">
+          <span id="page">&nbsp;</span>
+          <ul class="m_c_btn">
+            <li class="m_on">&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <i class="pause fa-solid fa-pause"></i>
+          </ul>
+        </div>
+
+        <div class="slide_box">
+          <ul class="menu_slide">
+            <li>
+              <a href="../menu/menu.html" title="메뉴 보러 가기">
+                <img src="./img/menu_slide_1.jpg" alt="프라이데이스 글레이즈드 버거">
+                <figcaption>
+                  <p>프라이데이스<br>글레이즈드 버거<br><br><span>17,900</span></p>
+                </figcaption>
+                <p class="name">프라이데이스 글레이즈드 버거<br><span>17,900</span></p>
+              </a>
+            </li>
+
+            <li>
+              <a href="../menu/menu.html" title="메뉴 보러 가기">
+                <img src="./img/menu_slide_2.jpg" alt="시그니처 글레이즈드 립">
+                <figcaption>
+                  <p>시그니처<br>글레이즈드 립<br><br><span>46,500</span></p>
+                </figcaption>
+                <p class="name">시그니처 글레이즈드 립<br><span>46,500</span></p>
+              </a>
+            </li>
+
+            <li>
+              <a href="../menu/menu.html" title="메뉴슬라이드3">
+                <img src="./img/menu_slide_3.jpg" alt="쉐차안 시그니처 파스타">
+                <figcaption>
+                  <p>쉐차안<br>시그니처 파스타<br><br><span>23,900</span></p>
+                </figcaption>
+                <p class="name">쉐차안 시그니처 파스타<br><span>23,900</span></p>
+              </a>
+            </li>
+
+            <li>
+              <a href="../menu/menu.html" title="메뉴슬라이드4">
+                <img src="./img/menu_slide_4.jpg" alt="뉴욕 스트립 스테이크">
+                <figcaption>
+                  <p>뉴욕 스트립<br>스테이크<br><br><span>39,900</span></p>
+                </figcaption>
+                <p class="name">뉴욕 스트립 스테이크<br><span>39,900</span></p>
+              </a>
+            </li>
+
+            <li>
+              <a href="../menu/menu.html" title="메뉴슬라이드5">
+                <img src="./img/menu_slide_5.jpg" alt="휠렛 미뇽">
+                <figcaption>
+                  <p>휠렛 미뇽<br><br><span>47,000</span></p>
+                </figcaption>
+                <p class="name">휠렛 미뇽<br><span>47,000</span></p>
+              </a>
+            </li>
+
+            <li>
+              <a href="../menu/menu.html" title="메뉴슬라이드6">
+                <img src="./img/menu_slide_6.jpg" alt="가든 샐러드">
+                <figcaption>
+                  <p>가든 샐러드 플래터<br><br><span>18,800</span></p>
+                </figcaption>
+                <p class="name">가든 샐러드 플래터<br><span>18,800</span></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab_control_box">
+          <i class="tab_btn fa-solid fa-caret-left"></i>
+          <span id="tab_page">&nbsp;</span>
+          <i class="tab_btn fa-solid fa-caret-right"></i>
+        </div>
+      </article>
+
+
+      <!-- 4. 멤버십 -->
+      <article class="mem_b">
+        <h2>MEMBERSHIP</h2>
+        <ul>
+          <li class="mem_tit">
+            <a href="#none" title="멤버십">
+              <span>TGI FAMILY</span>
+              <span>TGI 멤버십에 가입하고<br>풍성한 멤버십 혜택을 즐겨보세요.</span>
+              <span>더보기<i class="fas fa-arrow-right"></i></span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" title="멤버십 혜택">
+              <span>멤버십 혜택</span>
+              <span>풍성한 멤버십 혜택을 즐겨보세요</span>
+            </a>
+            <img src="./img/mem_img01.jpg" alt="멤버십">
+          </li>
+          <li>
+            <a href="#none" title="홈 TGI">
+              <span>홈 TGI</span>
+              <span>TGI의 메뉴를 집에서도 즐겨보세요</span>
+            </a>
+            <img src="./img/mem_img02.jpg" alt="멤버십">
+          </li>
+          <li>
+            <a href="#none" title="파티 & 예약">
+              <span>파티&예약</span>
+              <span>특별한 날엔 TGI와 함께하세요</span>
+            </a>
+            <img src="./img/mem_img03.jpg" alt="멤버십">
+          </li>
+        </ul>
+      </article>
+
+
+      <!-- 5. 이벤트 -->
+      <article class="event_s">
+        <h2>EVENT</h2>
+        <div class="e_slide_wrapper">
+          <ul class="e_slide">
+            <li><a href="#none" title="이벤트"><img src="./img/main_event01.jpg" alt="이벤트"></a></li>
+            <li><a href="#none" title="이벤트"><img src="./img/main_event02.jpg" alt="이벤트"></a></li>
+            <li><a href="#none" title="이벤트"><img src="./img/main_event03.jpg" alt="이벤트"></a></li>
+            <li><a href="#none" title="이벤트"><img src="./img/main_event04.jpg" alt="이벤트"></a></li>
+            <li><a href="#none" title="이벤트"><img src="./img/main_event05.jpg" alt="이벤트"></a></li>
+            <li><a href="#none" title="이벤트"><img src="./img/main_event06.jpg" alt="이벤트"></a></li>
+          </ul>
+        </div>
+        <a href="#none">더보기</a>
+      </article>
+
+
+      <!-- 6. 딜리버리 -->
+      <section class="delivery">
+        <h2>DELIVERY</h2>
+        <div class="d_wrap">
+          <article class="d_left">
+            <h3>주문</h3>
+            <a href="../menu/menu.html" title="주문페이지 바로가기" class="d_btn_img">
+              <img src="./img/mockup.png" alt="목업"></a>
+
+            <a href="#none" title="딜리버리 바로가기">주문하러가기</a>
+          </article>
+
+          <article class="d_right">
+            <h3>도시락</h3>
+            <ul>
+              <li class="delibox deli_box1">
+                <a href="../menu/menu.html" title="딜리버리 바로가기">
+                  <div class="d_list">
+                    <dl>
+                      <dt>허니 갈릭 버터 올데이 박스</dt>
+                      <dd>갈릭을 허니와 버터와 함께 볶아내</dd>
+                      <dd>새우 튀김과 휠렛을 같이 담아낸
+                        TGI 종합세트~!</dd>
+                    </dl>
+                  </div>
+                  <img src="./img/d_menu02.png" alt="도시락1">
+                </a>
+              </li>
+
+              <li class="delibox deli_box2">
+                <a href="../menu/menu.html" title="딜리버리바로가기">
+                  <img src="./img/d_menu01.png" alt="도시락2">
+                  <div class="d_list">
+                    <dl>
+                      <dt>불고기 올데이 박스</dt>
+                      <dd>한국인이라면 밥심~!</dd>
+                      <dd>스테이크 불고기와 어니언을 같이 볶아낸
+                        볶음밥</dd>
+                    </dl>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="icon1">
+          <img src="./img/d_icon.png" alt="오토바이">
+        </div>
+      </section>
+
+
+      <!-- 7. SNS -->
+      <section class="sns">
+        <h2>TGIF SNS</h2>
+        <article class="sns_btn">
+          <h3>sns</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/tgifridays_kr" target="_blank" title="인스타로 바로가기"><i
+                  class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/TGIfridayskorea" target="_blank" title="페이스북으로 바로가기"><i
+                  class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#none" title="트위터로 바로가기"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#none" title="유튜브로 바로가기"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#none" title="블로그로 바로가기"><i class="fa-brands fa-blogger-b"></i></a></li>
+          </ul>
+        </article>
+        <article class="sns_s" id="slider">
+          <h3>sns</h3>
+          <ul class="list_wrap">
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img01.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img02.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img03.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img04.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img05.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img06.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img07.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img08.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img09.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img10.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img11.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img12.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img13.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img14.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img15.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img16.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img17.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img18.jpg" alt="sns"></a></li>
+            <li><a href="https://www.instagram.com/tgifridays_kr/" target="_blank" title="sns"><img
+                  src="./img/sns_img19.jpg" alt="sns"></a></li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- 탑버튼 -->
+      <aside>
+        <a href="#none" title="위로 바로 가기" class="top_btn"><i class="fas fa-angle-up"></i>TOP</a>
+      </aside>
+
+    </main>
+
+
+    <!-- 푸터 영역 -->
+    <footer>
+      <div class="f_wrap">
+        <h1><a href="index.html" title="상단으로 올라 가기"><img src="./img/logo.png" alt="로고"></a></h1>
+        <div class="f_right">
+          <nav class="f_gnb">
+            <ul class="foo_l">
+              <li><a href="#none" title="홈페이지 이용약관">홈페이지 이용약관</a></li>
+              <li><a href="#none" title="개인정보처리방침">개인정보처리방침</a></li>
+              <li><a href="#none" title="회사소개">회사소개</a></li>
+              <li><a href="#none" title="사이트맵">사이트맵</a></li>
+              <li><a href="#none" title="영상정보처리기기 운영관리 방침">영상정보처리기기 운영관리 방침</a></li>
+            </ul>
+          </nav>
+          <ul class="awards">
+            <li><img src="./img/f_brandstar.jpg" alt="브랜드스타">
+              <p>2018 대한민국 브랜드스타</p>
+            </li>
+            <li><img src="./img/f_ncsi.jpg" alt="ncsi">
+              <p>2015 국가고객만족도 지수 패밀리레스토랑 부문 1위(총 7회 수상)</p>
+            </li>
+          </ul>
+        </div>
+        <address>
+          <div class="f_text">
+            <p>(주) 엠에프지코리아</p>
+            <p><span>대표자 : 윤나라</span><span>주소 : 서울특별시 중구 동호로 15길 31 중하빌딩 B동</span></p>
+            <p><span>사업자등록번호 : 261-81-16391 </span><a href="#none" class="btn-toast-pop">사업자정보확인</a></p>
+            <p class="copy">COPYRIGHT ⓒ MFGKOREA. ALL RIGHT RESERVED</p>
+          </div>
+          <div class="tel-text">
+            <p class="home-number">홈페이지 관련 문의<em class="roboto">070-0000-0000</em></p>
+            <p class="site-number">상담시간 : 월~금 10:00~17:00(토/일, 공휴일 휴무, 점심시간 12:00~13:30)</p>
+            <p class="key-number">대표번호<em class="roboto">2286-8800</em>&nbsp;&nbsp;/&nbsp;&nbsp;딜리버리 주문번호<em
+                class="roboto">0000-0000</em></p>
+          </div>
+        </address>
+      </div>
+    </footer>
+  </form>
+</body>
+
+</html>

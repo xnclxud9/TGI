@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGI Friday's</title>
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+    <!-- 초기화 서식 -->
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <!-- 공통 서식 -->
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <!-- PC 서식 -->
+    <link rel="stylesheet" href="../css/pc.css" type="text/css">
+    <!-- 태블릿 서식-->
+    <link rel="stylesheet" href="../css/tablet.css" type="text/css">
+    <!-- 모바일 서식-->
+    <link rel="stylesheet" href="../css/mobile.css" type="text/css">
+    <!-- 회원가입 서식 -->
+    <link rel="stylesheet" href="./css/join.css" type="text/css">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- 공통 스크립트(탑버튼) -->
+    <script src="../script/common.js" defer></script>
+
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- 공통 스크립트(탑버튼) -->
+    <script src="../script/common.js" defer></script>
+    <!-- 메인 스크립트 -->
+    <script src="../main/script/main.js" defer></script>
+</head>
+
+<body>
+    <!-- <form name="search_form" method="post" action="search.php"> -->
+    <input type="checkbox" id="toggle">
+    <!-- 상단 헤더 영역 -->
+    <header>
+        <h1>
+            <a href="../main/index.html" title="메인 화면 바로 가기">
+                <img src="../img/logo.png" alt="상단 로고">
+            </a>
+        </h1>
+
+        <label for="toggle" class="total_btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <!-- gnb -->
+        <div class="gnb_tab">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#nonenone" title="BRAND">BRAND</a>
+                        <ul class="sub">
+                            <li><a href="#none" title="ABOUT TGI">ABOUT TGI</a></li>
+                            <li><a href="#none" title="TGI 더 맛있게">TGI 더 맛있게</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../menu/menu.html" title="MENU">MENU</a>
+                        <ul class="sub">
+                            <li><a href="../menu/menu.html" title="신메뉴">신메뉴</a></li>
+                            <li><a href="#none" title="DELIVERY">DELIVERY</a></li>
+                            <li><a href="#none" title="런치세트">런치세트</a></li>
+                            <li><a href="#none" title="">시그니처그릴</a></li>
+                            <li><a href="#none" title="파스타&라이스">파스타&라이스</a></li>
+                            <li><a href="#none" title="샐러드">샐러드</a></li>
+                            <li><a href="#none" title="키즈메뉴">키즈메뉴</a></li>
+                            <li><a href="#none" title="사이드">사이드</a></li>
+                            <li><a href="#none" title="음료">음료</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#none" title="MEMBERSHIP">MEMBERSHIP</a>
+                        <ul class="sub">
+                            <li><a href="#none" title="멤버십혜택">멤버십혜택</a></li>
+                            <li><a href="#none" title="홈 TGI">홈 TGI</a></li>
+                            <li><a href="#none" title="파티&예약">파티&예약</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#none" title="EVENT">EVENT</a>
+                        <ul class="sub">
+                            <li><a href="#none" title="이벤트">이벤트</a></li>
+                            <li><a href="#none" title="공지사항">공지사항</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#none" title="STORE">STORE</a>
+                        <ul class="sub">
+                            <li><a href="#none" title="매장찾기">매장찾기</a></li>
+                            <li><a href="#none" title="창업문의">창업문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- lnb -->
+            <nav class="lnb">
+                <ul>
+                    <li><a href="../login/login.html" title="로그인">로그인</a></li>
+                    <li><a href="../join/join.html" title="회원가입">회원가입</a></li>
+                    <li><a href="#none" title="고객센터">고객센터</a></li>
+                    <li><label class="fas fa-search s_btn"></label></li>
+                </ul>
+            </nav>
+
+            <!-- 검색폼 -->
+            <div id="search_box">
+                <fieldset class="search">
+                    <legend>검색</legend>
+                    <input type="search" id="search" placeholder="검색어를 입력하세요" maxlength="50" autofocus>
+                    <label for="search" class="fas fa-search"></label>
+                </fieldset>
+                <label class="fas fa-xmark"></label>
+            </div>
+        </div>
+    </header>
+
+    <!-- 회원가입 영역 -->
+    <main class="register_wrap">
+        <form action="" method="post" name="join">
+            <fieldset class="join_wrap">
+                <h2>회원가입</h2>
+                <p><span class="red">*</span>는 필수항목입니다.</p>
+                <div class="nm_txt">
+                    <label for="full_name"><span class="red">*</span>이름</label>
+                    <input type="text" placeholder="이름" maxlength="30" name="full_name">
+                </div>
+                <div class="bir_txt">
+                    <label for="birth"><span class="red">*</span>생년월일</label>
+                    <select name="year" id="">
+                        <option value="년도">년도</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                    </select>
+                    <select name="month" id="">
+                        <option value="월">월</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select name="day" id="">
+                        <option value="일">일</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+
+                <div class="i_txt">
+                    <label for="join"><span class="red">*</span>아이디</label>
+                    <input type="text" placeholder="영문/숫자, 8~12자" maxlenth="30" id=join>
+                </div>
+
+                <div class="pwd_txt1">
+                    <label for="pwd"><span class="red">*</span>비밀번호</label>
+                    <input type="password" placeholder="대소문자/숫자/특수문자 조합, 8~16자" maxlenth="30" id=pwd>
+                </div>
+
+                <div class="pwd_txt2">
+                    <label for="pwd"><span class="red">*</span>비밀번호 확인</label>
+                    <input type="password" placeholder="비밀번호 확인" maxlenth="30" id=pwd>
+                </div>
+
+                <div class="p_txt">
+                    <label for="p_num"><span class="red">*</span>휴대폰번호</label>
+                    <input type="text" placeholder="ex) 010123456789" id="p_num">
+                </div>
+
+                <div class="e_txt">
+                    <label for="e_mail">이메일</label>
+                    <input type="text" class="em_txt">
+                    <span>@</span>
+                    <input type="text" class="em_txt">
+                    <select name="e_ma" id="e_m">
+                        <option value="직접입력">직접입력</option>
+                        <option value="네이버">naver.com</option>
+                        <option value="다음">daum.net</option>
+                        <option value="네이트">nate.com</option>
+                        <option value="구글">google.co.kr</option>
+                    </select>
+                </div>
+                <label for="e_ck">
+                    <input type="checkbox" id="e_ck">정보성 이메일을 수신합니다.
+                </label>
+
+
+                <section class="join_mem">
+                    <h3>멤버십 혜택 안내</h3>
+                    <ul>
+                        <li><a href="#none" title="멤버십1"><img src="./img/m_image01.jpg" alt="멤버십1"></a></li>
+                        <li><a href="#none" title="멤버십1"><img src="./img/m_image02.jpg" alt="멤버십2"></a></li>
+                        <li><a href="#none" title="멤버십1"><img src="./img/m_image03.jpg" alt="멤버십3"></a></li>
+                    </ul>
+                    <div class="join_btn">
+                        <input type="reset" value="취소하기">
+                        <input type="submit" value="가입하기">
+                    </div>
+            </fieldset>
+
+            </section>
+        </form>
+    </main>
+
+    <!-- 탑버튼 -->
+    <aside>
+        <a href="#none" title="위로 바로 가기" class="top_btn"><i class="fas fa-angle-up"></i>TOP</a>
+    </aside>
+
+    <!-- 푸터 영역 -->
+    <footer>
+        <div class="f_wrap">
+            <h1><a href="" title="상단으로 올라 가기"><img src="../img/logo.png" alt="로고"></a></h1>
+            <div class="f_right">
+                <nav class="f_gnb">
+                    <ul class="foo_l">
+                        <li><a href="#none" title="홈페이지 이용약관">홈페이지 이용약관</a></li>
+                        <li><a href="#none" title="개인정보처리방침">개인정보처리방침</a></li>
+                        <li><a href="#none" title="회사소개">회사소개</a></li>
+                        <li><a href="#none" title="사이트맵">사이트맵</a></li>
+                        <li><a href="#none" title="영상정보처리기기 운영관리 방침">영상정보처리기기 운영관리 방침</a></li>
+                    </ul>
+                </nav>
+                <ul class="awards">
+                    <li><img src="../img/f_brandstar.jpg" alt="브랜드스타">
+                        <p>2018 대한민국 브랜드스타</p>
+                    </li>
+                    <li><img src="../img/f_ncsi.jpg" alt="ncsi">
+                        <p>2015 국가고객만족도 지수 패밀리레스토랑 부문 1위(총 7회 수상)</p>
+                    </li>
+                </ul>
+            </div>
+            <address>
+                <div class="f_text">
+                    <p>(주) 엠에프지코리아</p>
+                    <p><span>대표자 : 윤나라</span><span>주소 : 서울특별시 중구 동호로 15길 31 중하빌딩 B동</span></p>
+                    <p><span>사업자등록번호 : 261-81-16391 </span><a href="#none;" class="btn-toast-pop">사업자정보확인</a></p>
+                    <p class="copy">COPYRIGHT ⓒ MFGKOREA. ALL RIGHT RESERVED</p>
+                </div>
+                <div class="tel-text">
+                    <p class="home-number">홈페이지 관련 문의<em class="roboto">070-0000-0000</em></p>
+                    <p class="site-number">상담시간 : 월~금 10:00~17:00(토/일, 공휴일 휴무, 점심시간 12:00~13:30)</p>
+                    <p class="key-number">대표번호<em class="roboto">2286-8800</em>&nbsp;&nbsp;/&nbsp;&nbsp;딜리버리 주문번호<em
+                            class="roboto">0000-0000</em></p>
+                </div>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>

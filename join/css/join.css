@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+span .red{
+  display: inline-block;
+}
+.register_wrap{
+  width: 66%; 
+  position: relative;
+  margin: 0px auto;
+  text-align: center;
+}
+.join_wrap{
+  width:100%;
+}
+.join_wrap p:first-child{
+  position: absolute;
+  min-width: 160px; 
+  top:70px;
+}
+
+.join_wrap input:focus{
+  outline: 1px solid #b60000;
+}
+.join_wrap select:focus{
+  outline: 1px solid #b60000;
+}
+.bir_txt{
+  margin: 10px 0px;
+}
+
+#e_ck{
+  width: 20px;
+}
+.join_wrap input[type="checkbox"]{
+  accent-color:#B60000; 
+  outline: 0;
+}
+.join_wrap label[for="e_ck"]{
+  width: 66%;
+  transform: translateX(22%);
+}
+.e_txt{
+  width: 100%;
+}
+
+#e_m{
+  margin-left: 5px;
+}
+.e_txt span{
+  padding: 0 0.1%;
+}
+.join_btn{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0;
+}
+.join_btn input[type=reset]{
+  width: 40% !important;
+  font-size: 16px;
+  background: #fff;
+  border: none;
+  color: #B60000;
+  cursor: pointer;
+  border: 1px solid#ccc;
+  text-indent: 0;
+}
+.join_btn input[type=submit]{
+  width: 40% !important;
+    font-size: 16px;
+    background: #B60000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid#B60000;
+}
+.join_btn > input[type=submit]:hover{
+  border: 1px solid#cd1f1f;
+  color: #fff;
+  background: #cd1f1f;
+}
+.join_btn > input[type=reset]:hover{
+  border: 1px solid #b60000;
+}
+.join_btn > input[type=reset]:focus{
+  outline: 0
+}
+
+.join_mem ul{
+  display: flex;
+  justify-content: space-around;
+}
+.join_mem li{
+  width: 32%;
+}
+.join_mem h3{
+  font-size: 30px;
+  margin: 50px 0px;
+}
+.join_mem img{
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width:1025px){
+  .join_wrap p:first-of-type{
+  width:30%;
+  transform: translateX(200%);
+}
+.join_mem{
+  width: 80%;
+  position: relative;
+  bottom: 9px;
+  margin: 0px auto;
+  
+}
+.em_txt{
+  width: 16.4% !important;
+}
+.join_wrap select{
+  width: 16.1%;
+  height: 50px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  text-indent: 10px;
+}
+.red{
+  color:#b60000;
+  margin-right: 2%;
+}
+.join_wrap label{
+  display: inline-block;
+  width: 12%;
+  margin: 0px auto;
+  text-align: left;
+  min-width: 140px;
+  box-sizing: border-box;
+  
+}
+.join_wrap input[type]{
+  border: 1px solid #ddd;
+  width: 50%; 
+  line-height: 46px;
+  margin: 10px 0px;
+  box-sizing: border-box;
+  text-indent: 10px;
+}
+#e_m{
+  width: 14% !important;
+}
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  .join_mem{
+    width: 100%;
+    position: relative;
+    bottom: 9px;
+    margin: 0px auto;
+    
+  }
+  .join_wrap input[type]{
+    border: 1px solid #ddd;
+    width: 76%; 
+    line-height: 46px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    text-indent: 10px;
+  }
+  .join_wrap label{
+    display: inline-block;
+    width: 12%;
+    margin: 0px auto;
+    text-align: left;
+    min-width: 109px;
+    box-sizing: border-box;
+    
+  }
+
+  .join_wrap p:first-of-type{
+  width:35%;
+  transform: translateX(185%);
+  
+}
+.em_txt{
+  width: 22.4% !important;
+}
+.red{
+  color:#b60000;
+  margin-right: 0%;
+}
+.gnb{
+  display: none;
+}
+.join_wrap select{
+  width: 24.5%;
+  height: 50px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  text-indent: 10px;
+}
+.gnb{
+  display: none;
+}
+}
+@media screen and (max-width:767px){
+  .join_mem{
+    width: 100%;
+    position: relative;
+    bottom: 9px;
+    margin: 0px auto;
+  }
+  .join_mem img{
+    width: 100%;
+  }
+  .join_mem ul{
+    width: 100%;
+    text-align: center;
+  }
+  .join_mem li{
+    display: inline-block;
+    width: 49%;
+  }
+  .join_wrap input[type]{
+    border: 1px solid #ddd;
+    width: 76%; 
+    line-height: 46px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    text-indent: 10px;
+  }
+  .join_wrap label{
+    display: inline-block;
+    width: 77%;
+    margin: 0px auto;
+    text-align: left;
+    min-width: 109px;
+    box-sizing: border-box;
+    
+  }
+
+  .join_wrap p:first-of-type{
+  width:51%;
+  transform: translateX(83%);
+  
+}
+.em_txt{
+  width: 22.4% !important;
+}
+.red{
+  color:#b60000;
+  margin-right: 0%;
+}
+.gnb{
+  display: none;
+}
+.join_wrap select{
+  width: 24.5%;
+  height: 50px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  text-indent: 10px;
+}
+.join_mem li:last-child{
+  display: none;
+}
+}
