@@ -52,24 +52,21 @@ main{
     margin: 0px 7px;
     font-size: 14px;
 }
-.log_info ul li:first-child{
-  margin-left: 0;
+.log_info ul li a{
+  position: relative;
+
 }
-.log_info ul li:last-child{
-  margin-right: 0;
-}
-.log_info ul li::after{
+.log_info ul li a::after{
   width: 1px;
   height: 14px;
   background: #333;
   content: "";
   display: block;
-  position: relative;
-  top: -27px;
-  left: 63px;
+  position: absolute;
+  top: 1px;
+  right: -8px;
 }
-.log_info ul li:nth-child(2)::after{left: 82px;}
-.log_info ul > li:last-child::after{display: none;}
+.log_info ul > li:last-child a::after{display: none;}
 #log_btn{
     font-size: 16px;
     background: #B60000;
